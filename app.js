@@ -14,6 +14,10 @@ connectDB();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("Please go the API route to monitor the changes.")
+})
+
 // Routes
 app.use('/api', statsRoute);
 app.use('/api', deviationRoute);
