@@ -11,7 +11,7 @@ A server-side application built with Node.js and MongoDB, designed to track cryp
 
 ## APIs
 
-1. ### `/stats`: **" URL: http://localhost:3000/stats?coin=bitcoin "**
+1. ### `/stats`:
    - **Method:** GET
 - **Query Parameters:**
   ```json
@@ -26,7 +26,7 @@ A server-side application built with Node.js and MongoDB, designed to track cryp
   "24hChange": 3.4
   }
 
-2. ### `/deviation`: **" URL: http://localhost:3000/deviation?coin=bitcoin "**
+2. ### `/deviation`:
    - **Method:** GET
 - **Query Parameters:**
   ```json
@@ -49,7 +49,11 @@ A server-side application built with Node.js and MongoDB, designed to track cryp
 - Fork the repository and clone the project in your local machine.
 - In a terminal, run `npm install` to download all the dependencies.
 - In the former terminal, run `nodemon app.js` to start your server.
-- Now in the browser type **" URL: http://localhost:3000 "**
+- Now in the browser type **"" http://localhost:3000 ""**
+
+## Hosted Website URL
+
+**"https://cryptocurrency-tracker-roan.vercel.app/"**
 
 ## Author
 
