@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto Tracker</h1>
+    <h2>Welcome to the Cryptocurrency Tracker</h2>
+    <form action="/api/stats" method="get">
+      <label for="coin">Get Cryptocurrency Stats</label>
+      <select name="coin" id="coin">
+        <option value="bitcoin">Bitcoin</option>
+        <option value="matic-network">Matic</option>
+        <option value="ethereum">Ethereum</option>
+      </select>
+      <button type="submit">View Stats</button>
+    </form>
+    <form action="/api/deviation" method="get">
+      <label for="coin-dev">Get Standard Deviation</label>
+      <select name="coin" id="coin-dev">
+        <option value="bitcoin">Bitcoin</option>
+        <option value="matic-network">Matic</option>
+        <option value="ethereum">Ethereum</option>
+      </select>
+      <button type="submit">View Deviation</button>
+    </form>
+  </div>
+</body>
+</html>

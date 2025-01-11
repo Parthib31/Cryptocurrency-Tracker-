@@ -22,9 +22,13 @@ router.get('/deviation', async (req, res) => {
       prices.length;
     const deviation = Math.sqrt(variance);
 
-    res.json({ deviation: deviation.toFixed(2) });
+    //   res.json({ deviation: deviation.toFixed(2) });
+    res.render('deviation', {
+      coin,
+      deviation: deviation.toFixed(2),
+    });
   } catch (err) {
-    res.status(500).json({ error: 'Server error' });
+    res.status(500).json({ error: 'Server error' });    
   }
 });
 
